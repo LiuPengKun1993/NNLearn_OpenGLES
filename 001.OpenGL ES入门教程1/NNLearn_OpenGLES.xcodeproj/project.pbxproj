@@ -16,7 +16,7 @@
 		E3470866210084C400026606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3470865210084C400026606 /* main.m */; };
 		E3470870210084C400026606 /* NNLearn_OpenGLESTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E347086F210084C400026606 /* NNLearn_OpenGLESTests.m */; };
 		E347087C210087B500026606 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E347087B210087B500026606 /* GLKit.framework */; };
-		E347087E2100941D00026606 /* hader.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E347087D2100941C00026606 /* hader.jpeg */; };
+		E34708802101D08700026606 /* header.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E347087F2101D08600026606 /* header.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 		E347086F210084C400026606 /* NNLearn_OpenGLESTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNLearn_OpenGLESTests.m; sourceTree = "<group>"; };
 		E3470871210084C400026606 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E347087B210087B500026606 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
-		E347087D2100941C00026606 /* hader.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hader.jpeg; sourceTree = "<group>"; };
+		E347087F2101D08600026606 /* header.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = header.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 				E3470857210084BF00026606 /* ViewController.m */,
 				E3470859210084BF00026606 /* Main.storyboard */,
 				E347085F210084C400026606 /* Assets.xcassets */,
-				E347087D2100941C00026606 /* hader.jpeg */,
+				E347087F2101D08600026606 /* header.jpeg */,
 				E3470861210084C400026606 /* LaunchScreen.storyboard */,
 				E3470864210084C400026606 /* Info.plist */,
 				E3470865210084C400026606 /* main.m */,
@@ -203,7 +203,7 @@
 			files = (
 				E3470863210084C400026606 /* LaunchScreen.storyboard in Resources */,
 				E3470860210084C400026606 /* Assets.xcassets in Resources */,
-				E347087E2100941D00026606 /* hader.jpeg in Resources */,
+				E34708802101D08700026606 /* header.jpeg in Resources */,
 				E347085B210084BF00026606 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,12 +382,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3M4YENM4Y5;
 				INFOPLIST_FILE = NNLearn_OpenGLES/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "---.NNLearn-OpenGLES";
+				PRODUCT_BUNDLE_IDENTIFIER = OS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -398,12 +400,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3M4YENM4Y5;
 				INFOPLIST_FILE = NNLearn_OpenGLES/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "---.NNLearn-OpenGLES";
+				PRODUCT_BUNDLE_IDENTIFIER = OS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

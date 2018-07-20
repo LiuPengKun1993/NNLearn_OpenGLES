@@ -21,7 +21,11 @@
 @implementation ViewController
 
 /** OpenGL ES 不支持直接使用多边形数据，只能用三角形模拟多边形。而 OpenGL 是直接支持多边形的，因为 PC 的显卡性能更强。 */
-/** 模拟器内存占用内存比较大: The OpenGL ES support in Simulator should be used to help you get started writing an OpenGL ES app. Never assume that Simulator reflects the real-world performance or the precise capabilities of the graphics processors used in iOS devices. Always profile and optimize your drawing code on a real device。 */
+/** 模拟器内存占用内存比较大: The OpenGL ES support in Simulator should be used to help you get started writing an OpenGL ES app. Never assume that Simulator reflects the real-world performance or the precise capabilities of the graphics processors used in iOS devices. Always profile and optimize your drawing code on a real device。
+    在真机上测试是 8M 左右
+ */
+
+/** 在此界面搜索 `#warning` , 测试四个顶点绘制 2 个三角形 */
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,6 +52,7 @@
     [EAGLContext setCurrentContext:self.context];
 }
 
+#warning 测试四个顶点时 打开此方法注释
 //- (void)creatVertexData {
 //    // 顶点数据，前三个是顶点坐标，后面两个是纹理坐标
 //    GLfloat squareVertexData[] = {
@@ -81,6 +86,7 @@
 //    glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE, sizeof(GLfloat) * 5, (GLfloat *)NULL + 3);
 //}
 
+#warning 测试四个顶点时 注释此方法代码
 - (void)creatVertexData {
     // 顶点数组和索引数组，前三个是顶点坐标（x、y、z轴），后面两个是纹理坐标（s，t）
     // 根据三角形的绘制顺序来定义
@@ -139,7 +145,7 @@
 
 - (void)creatFilePath {
     // 纹理贴图
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"hader" ofType:@"jpeg"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"header" ofType:@"jpeg"];
     // GLKTextureLoaderOriginBottomLeft 纹理坐标系是相反的
     // GLKTextureLoader 读取图片
     NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:@(1), GLKTextureLoaderOriginBottomLeft, nil];
@@ -167,8 +173,10 @@
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     // 启动着色器
     [self.effect prepareToDraw];
+#warning 测试四个顶点时 注释下句代码
     glDrawArrays(GL_TRIANGLES, 0, 6);
     //
+#warning 测试四个顶点时 将以下代码的注释关闭
 //    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_BYTE, 0);
 }
 
