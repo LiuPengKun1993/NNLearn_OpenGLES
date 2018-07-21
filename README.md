@@ -12,7 +12,7 @@
 
 # demo 列表:
 
-- [001.OpenGL ES入门教程1](https://github.com/liuzhongning/NNLearn_OpenGLES/tree/master/001.OpenGL%20ES入门教程1)
+- [001.OpenGL ES入门教程1](https://github.com/liuzhongning/NNLearn_OpenGLES/tree/master/001.OpenGL%20ES%20入门教程1)
 
 学习的博客地址: [iOS开发-OpenGL ES入门教程1](https://www.jianshu.com/p/750fde1d8b6a)
 
