@@ -47,7 +47,11 @@
 
 - 学习的博客地址: [OPenGL ES _ 入门练习_003](https://www.jianshu.com/p/36d9dac03345)
   
+  ### [006.OpenGL ES 入门教程6](https://github.com/liuzhongning/NNLearn_OpenGLES/tree/master/006.OpenGL%20ES%20入门教程6)
   
+  - 实现功能: 用最底层的代码绘制一个三角形; 
+  
+  - 学习的博客地址: [OpenGL ES _ 入门练习_005](https://www.jianshu.com/p/ac9375962f34)
 
 # License
 
