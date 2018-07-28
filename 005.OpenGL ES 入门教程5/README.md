@@ -12,4 +12,4 @@
 
 - [OPenGL ES _ 入门练习_003](https://www.jianshu.com/p/36d9dac03345)
 
-- [OpenGL 常见方法解析（转](http://blog.sina.com.cn/s/blog_721d87eb0100wtbk.html)
+- [OpenGL 常见方法解析（转）](http://blog.sina.com.cn/s/blog_721d87eb0100wtbk.html)
